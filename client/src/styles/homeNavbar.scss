@@ -1,0 +1,48 @@
+.home-navbar {
+  box-shadow: 0 5px 10px rgba(168, 212, 185, 0.5);
+}
+.home-navbar-container {
+  width: 80%;
+  margin: auto;
+  @include flex(row, space-between, center);
+  min-height: 5vh;
+  h1 {
+    color: $third;
+  }
+}
+.home-navbar-list {
+  @include flex(row, auto, center);
+  list-style: none;
+  li {
+    padding: 1rem 0 1rem 2rem;
+  }
+  a {
+    text-decoration: none;
+    color: gray;
+    height: 100% !important;
+    padding: 0.5rem 0;
+    position: relative;
+    &::after {
+      position: absolute;
+      height: 3px;
+      content: "";
+      width: 100%;
+      background: $third;
+      left: 0;
+      bottom: 0;
+      transform: scale(0);
+      transition: 0.5s;
+    }
+    &:hover {
+      &::after {
+        transform: scale(1);
+      }
+    }
+  }
+  a.active {
+    color: $third;
+    &::after {
+      transform: scale(1);
+    }
+  }
+}

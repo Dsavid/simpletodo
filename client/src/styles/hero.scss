@@ -1,0 +1,22 @@
+.hero {
+  background: $third;
+}
+.hero-container {
+  min-height: 50vh;
+  width: 80%;
+  margin: auto;
+  @include flex(row, auto, center);
+  color: white;
+  flex-wrap: wrap;
+}
+.hero-left {
+  margin: 2rem 0;
+  flex: 1 1 30rem;
+  p {
+    padding: 3rem 0;
+  }
+}
+.hero-right {
+  flex: 1 1 30rem;
+  margin: 2rem 0;
+}

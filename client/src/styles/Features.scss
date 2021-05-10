@@ -1,0 +1,32 @@
+.features {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.features-container {
+  min-height: 43vh;
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+}
+.feature {
+  cursor: pointer;
+  background: $third;
+  color: white;
+  text-align: center;
+  margin: 2rem;
+  padding: 4rem 1rem;
+  box-shadow: 10px 10px 10px rgba(214, 169, 226, 0.5);
+  transition: 0.5s;
+  flex: 1 1 30rem;
+  min-height: 30vh;
+  &:hover {
+    background: $secondary;
+    transform: translateY(-10%) !important;
+  }
+  i {
+    font-size: 4rem;
+  }
+  h1 {
+    padding: 2rem 0;
+  }
+}

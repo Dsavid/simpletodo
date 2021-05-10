@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+$primary: rgb(139, 190, 233);
+$secondary: rgb(214, 169, 226);
+$third: rgb(168, 212, 185);
+@mixin flex($flex, $justify, $align) {
+  display: flex;
+  flex-direction: $flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+@import "home";
+@import "homeNavbar";
+@import "hero";
+@import "login";
+@import "Features";
+@import "about";
+@import "todo";
+h1 {
+  font-size: 3rem;
+}
+h5 {
+  font-size: 5rem;
+}
+p,
+textarea,
+li,
+label,
+button,
+input {
+  font-size: 2rem;
+}
